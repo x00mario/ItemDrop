@@ -1,0 +1,6 @@
+name: ItemDrop
+version: '0.1'
+main: de.cure53.anton.itemdrop.ItemDrop
+api-version: 1.18
+authors: [ SuperAnton53 ]
+description: Unser ItemDrop Plugin
