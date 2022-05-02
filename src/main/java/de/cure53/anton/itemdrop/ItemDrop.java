@@ -31,6 +31,7 @@ public class ItemDrop extends JavaPlugin implements Listener {
 		getServer().getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
 
 			public void run() {
+				
 				// Finde den aktuellen Spieler
 				Player player = event.getPlayer();
 
@@ -60,7 +61,6 @@ public class ItemDrop extends JavaPlugin implements Listener {
 					);
 				}
 			}
-
 		}, 0L, 300L);
 	}
 
