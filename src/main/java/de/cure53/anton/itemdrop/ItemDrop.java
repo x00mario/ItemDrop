@@ -50,18 +50,18 @@ public class ItemDrop extends JavaPlugin implements Listener {
 					// Setze Material ins Inventar
 					ItemStack item = new ItemStack(material);
 					inventory.addItem(item);
-					player.sendMessage( 
-							ChatColor.YELLOW + "You were given " +
-							ChatColor.GREEN + material.name().replace("_", " ").toLowerCase() + 
-							ChatColor.YELLOW +", whoa!" 
-					);
+					//player.sendMessage( 
+					//		ChatColor.YELLOW + "You were given " +
+					//		ChatColor.GREEN + material.name().replace("_", " ").toLowerCase() + 
+					//		ChatColor.YELLOW +", whoa!" 
+					//);
 				} else {
-					player.sendMessage( 
-						ChatColor.YELLOW + "You are dead and cannot receive items" 
-					);
+					//player.sendMessage( 
+					//	ChatColor.YELLOW + "You are dead and cannot receive items" 
+					//);
 				}
 			}
-		}, 0L, 300L);
+		}, 0L, 50L); // Alle 5 Sekunden
 	}
 
 	/**
